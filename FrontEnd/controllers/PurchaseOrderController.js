@@ -33,7 +33,7 @@ $.ajax({
 $("#cmbCustomerId").click(function () {
     let search = $("#cmbCustomerId").val();
     $.ajax({
-        url: baseUrl + "customer/searchCusId/?id=" + search,
+        url: baseUrl + "customer/searchCusId?id=" + search,
         method: "GET",
         contentType: "application/json",
         dataType: "json",
@@ -74,7 +74,7 @@ $.ajax({
 $("#cmbItemCode").click(function () {
     var search = $("#cmbItemCode").val();
     $.ajax({
-        url: baseUrl + "item/searchItemCode/?code=" + search,
+        url: baseUrl + "item/searchItemCode?code=" + search,
         method: "GET",
         contentType: "application/json",
         dataType: "json",

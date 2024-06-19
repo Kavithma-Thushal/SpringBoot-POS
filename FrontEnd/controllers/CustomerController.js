@@ -109,7 +109,7 @@ $("#txtSearchCusId").on("keypress", function (event) {
 function searchCustomer() {
     let searchCusId = $("#txtSearchCusId").val();
     $.ajax({
-        url: baseUrl + "customer/searchCusId/?id=" + searchCusId,
+        url: baseUrl + "customer/searchCusId?id=" + searchCusId,
         method: "GET",
         contentType: "application/json",
         dataType: "json",
